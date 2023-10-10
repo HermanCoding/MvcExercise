@@ -1,0 +1,19 @@
+﻿@model List<DogsModel>
+	<hr />
+	<div class="dogs-container">
+	@if (Model != null && Model.Count() > 0)
+	{
+		@foreach (var dog in Model)
+		{
+			<div class="dog">
+				<img src="~/images/@(dog.Image).png" />
+				<h1>@dog.Name</h1>
+				<a asp-controller="Dogs" asp-action="Details" asp-route-id="@dog.Id">More Info</a>
+			</div>
+		}
+	}
+	else
+	{
+		<p>Faild to retrive dogs.</p>
+	}
+	</div>

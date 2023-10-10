@@ -1,0 +1,36 @@
+﻿@model DogsModel
+
+@if(Model != null)
+{
+	<div class="dog">
+		<img src="~/images/@(Model.Image).png" />
+		<h1>@Model.Name</h1>
+	<div>
+			<label>Cuteness:</label>
+			<span>@Model.Cuteness</span>
+	</div>
+	<div>
+		<label>Temperament:</label>
+		<span>@Model.Temperament</span>
+	</div>
+	<div>
+		<label>Favorite food:</label>
+		<span>@Model.FavFood</span>
+	</div>
+	<div>
+		<label>Favorite toy:</label>
+		<span>@Model.FavToy</span>
+	</div>
+		@if (Model.IsAdopted == false)
+		{
+			<a class="btn btn-warning" asp-controller="Dogs" asp-action="Congratulations" asp-route-id="@Model.Id">Adopt Dog!</a>
+		}
+		else
+		{
+			<p>This dog has found a happy home!</p>
+		}
+	</div>
+}else
+{
+	<p>Could not find dog!</p>
+}

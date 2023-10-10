@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Cutest Dogs Adoption Service</h1>
+    <ul>
+        <li>Typ Labb</li>
+        <li>Ämnen LINQ MVC</li>
+        <li> Huvudområde C#/.NET</li>
+    </ul>
+    <h3>🎯 Gör en MVC-app för att visa olika ursöta hundar man kan adoptera</h3>
+    <h4>Förutsättningar</h4>
+    <p>
+        Jobba individuellt eller i grupper om två och två med en driver (sätt en klocka
+        och byt av efter 10 minuter)!<br />
+        Utgå från de tillhandahållna bilderna!<br />
+        <h4>Mål</h4>
+        Skapa en specifik controller "DogsController" för alla sidor<br />
+        Skapa följande views och controller methods<br />
+        En som visar en specifik hund<br />
+        En som visar alla hundar<br />
+        Använd LINQ för att sortera hundarna i bokstavsordning på denna sida<br />
+        Varje hund ska på denna sida ha en CTA (call to action) som är en
+        knapp där det står "Adopt dog!"<br />
+        En sida som visas när man klickar på "Adopt dog!"<br />
+        Denna kongratulationssida ska visa info om den specifika hunden och
+        typ “Thanks for adopting this dog!” + lite info om den, namn o.s.v.<br />
+        Hundarna ska visas i ett card, med bild!<br />
+        Propertys på hundarna ska vara<br />
+        <ul>
+			<li>int Id</li>
+            <li>string Name</li>
+            <li>int Cuteness</li>
+            <li>string Image</li>
+            <li>string FavFood</li>
+            <li>string FavToy</li>
+            <li>int Temperament</li>
+            <li>bool Adopted</li>
+        </ul>
+        <br />
+        <br />
+        var dogs = new List<Dog>
+            {
+            new Dog { Id = 1, Name = "Bark Twain", Cuteness = 9, Image = "BarkTwain1", FavFood
+            = "Barkoni", FavToy = "Barkle", Temperament = 7, Adopted = false },
+            new Dog { Id = 2, Name = "Sir Waggington", Cuteness = 8, Image = "SirWaggington2",
+            FavFood = "Pawsta", FavToy = "Fetch Stick", Temperament = 6, Adopted = false },
+            new Dog { Id = 3, Name = "Furball", Cuteness = 6, Image = "Furball3", FavFood = "B
+            one Appetit", FavToy = "Squeaky Ball", Temperament = 8, Adopted = false },
+            new Dog { Id = 4, Name = "Princess Paws", Cuteness = 10, Image = "PrincessPaws4",
+            FavFood = "Royal Canin", FavToy = "Diamond Collar", Temperament = 5, Adopted = false
+            },
+            new Dog { Id = 5, Name = "Biscuit", Cuteness = 7, Image = "Biscuit5", FavFood = "P
+            upcakes", FavToy = "Chewy Bone", Temperament = 9, Adopted = false },
+            new Dog { Id = 6, Name = "Daisy", Cuteness = 4, Image = "Daisy6", FavFood = "Doggi
+            e Delight", FavToy = "Plush Squirrel", Temperament = 3, Adopted = false },
+            new Dog { Id = 7, Name = "Captain Woof", Cuteness = 6, Image = "CaptainWoof7", Fav
+            Food = "Fish 'n Chips", FavToy = "Nautical Rope", Temperament = 8, Adopted = false },
+            new Dog { Id = 8, Name = "Snuggle Paws", Cuteness = 9, Image = "SnugglePaws8", Fav
+            Food = "Cuddle Crunchies", FavToy = "Soft Blanket", Temperament = 7, Adopted = false
+            },
+            new Dog { Id = 9, Name = "Rocky", Cuteness = 3, Image = "Rocky9", FavFood = "Steak
+            Bites", FavToy = "Tennis Ball", Temperament = 4, Adopted = false },
+            new Dog { Id = 10, Name = "Lola", Cuteness = 5, Image = "Lola10", FavFood = "Treat
+            Tower", FavToy = "Squeaky Duck", Temperament = 6, Adopted = false },
+            new Dog { Id = 11, Name = "Maximus", Cuteness = 8, Image = "Maximus11", FavFood =
+            "Beefy Bites", FavToy = "Tug Rope", Temperament = 9, Adopted = false },
+            new Dog { Id = 12, Name = "Roxy", Cuteness = 7, Image = "Roxy12", FavFood = "Chick
+            en Chewies", FavToy = "Frisbee", Temperament = 4, Adopted = false },
+            new Dog { Id = 13, Name = "Teddy", Cuteness = 2, Image = "Teddy13", FavFood = "Car
+            rot Crunch", FavToy = "Plush Bunny", Temperament = 2, Adopted = false },
+            new Dog { Id = 14, Name = "Coco", Cuteness = 6, Image = "Coco14", FavFood = "Cocon
+            ut Chew", FavToy = "Ball Launcher", Temperament = 8, Adopted = false }
+            };
+            <br />
+            <br />
+            <br />
+			<h3>Cutest Dogs Adoption Service 3</h3><br />
+                🔥 Superbonus: Kolla upp och använd dig ViewData för att displaya ett
+                meddelande på sidan för alla hundar: hur många hundar som har över 5 i
+                cuteness.
+            <br /><br />
+            <h4>Lycka till! 💪</h4><br /><br />
+            Resurser
+            ViewData<br />
+            <a href="https://www.tutorialsteacher.com/mvc/viewdata-in-asp.net-mvc">https://www.tutorialsteacher.com/mvc/viewdata-in-asp.net-mvc</a><br />
+            Ett sätt att skicka data till en view utan att använda sig av modeller<br />
+    </p>
+</div>
